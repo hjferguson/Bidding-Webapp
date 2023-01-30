@@ -8,26 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Harlan\\.nuget\\packages\\": {}
+    "/Users/raleighdesmond/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj",
+      "projectUniqueName": "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/bidder.csproj",
       "projectName": "bidder",
-      "projectPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj",
-      "packagesPath": "C:\\Users\\Harlan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\obj\\",
+      "projectPath": "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/bidder.csproj",
+      "packagesPath": "/Users/raleighdesmond/.nuget/packages/",
+      "outputPath": "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Harlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/raleighdesmond/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
