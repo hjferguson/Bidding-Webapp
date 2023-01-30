@@ -8,8 +8,6 @@ namespace bidder.Models
 		private string password;
 		private bool verifiedStatus;
 		private string email;
-		private string name;
-		private 
 
 
 
