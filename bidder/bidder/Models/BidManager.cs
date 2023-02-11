@@ -8,7 +8,7 @@ namespace bidder.Models
 		private int numBids;
 		private Bid[] bidList;
 
-		
+
 		public BidManager(int size)
 		{
 			IdSeed = 0;
@@ -32,17 +32,24 @@ namespace bidder.Models
 			return bidList;
 		}
 
-		public Boolean addBid(Auction auction, User user, int amount)
+		public bool addBid(Auction auction, User user, int amount)
 		{
 			Bid temp = new Bid(IdSeed, auction, user, amount);
-			bidList
-
-				//testing 
+			bidList[numBids] = temp;
+			IdSeed++;
+			numBids++;
+			return true;
 		}
 
 
 
 
-	}
-}
+
+
+
+
+
+
+	}// end of class
+}// end of namespace
 

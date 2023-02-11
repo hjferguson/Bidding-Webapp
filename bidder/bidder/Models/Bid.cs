@@ -4,14 +4,11 @@ namespace bidder
 {
 	public class Bid
 	{
-		private int bidID; 
-		private Auction auction;
+		private int bidID { get; set;}
+		private Auction auction { get; set; }
 		private User user;
 		private int amount;
 
-
-		
-		
 
 
 
