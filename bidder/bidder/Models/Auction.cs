@@ -5,13 +5,17 @@ namespace bidder
 {
 	public class Auction
 	{
-		int auctionID;
-		Bid[] bidList;
-		string itemName;
-		double startingBid;
-		double reservePrice;
-		User seller;
-		User winner;
+		public int auctionID { get; set; }
+		public Bid[] bidList;
+		public string itemName;
+		public double startingBid;
+		public double reservePrice;
+		public DateTime auctionStart;
+		public DateTime auctionEnd;
+		public string condition;
+		public string category;
+		public User seller;
+		public User winner;
 
 
 
