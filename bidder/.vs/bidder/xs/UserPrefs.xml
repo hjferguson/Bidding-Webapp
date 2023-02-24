@@ -1,30 +1,31 @@
 ﻿<Properties StartupConfiguration="{11DDB2CD-EC18-4C54-AF28-D419F074AF01}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="bidder/Models/Auction.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="bidder/Data/SiteContext.cs">
     <Files>
-      <File FileName="bidder/Models/User.cs" Line="1" Column="1" />
-      <File FileName="bidder/Models/AuctionManager.cs" Line="1" Column="1" />
-      <File FileName="bidder/Models/BidManager.cs" Line="44" Column="1" />
+      <File FileName="bidder/Models/User.cs" Line="7" Column="3" />
+      <File FileName="bidder/Models/AuctionManager.cs" />
+      <File FileName="bidder/Models/BidManager.cs" />
       <File FileName="bidder/Models/UserManager.cs" Line="13" Column="17" />
-      <File FileName="bidder/Program.cs" Line="22" Column="1" />
-      <File FileName="bidder/Models/Bid.cs" Line="11" Column="1" />
-      <File FileName="bidder/Data/DbContext.cs" Line="24" Column="2" />
-      <File FileName="bidder/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="bidder/appsettings.json" Line="13" Column="1" />
-      <File FileName="bidder/Models/Auction.cs" Line="19" Column="1" />
+      <File FileName="bidder/Program.cs" Line="21" Column="2" />
+      <File FileName="bidder/appsettings.json" Line="10" Column="23" />
+      <File FileName="bidder/Models/Auction.cs" Line="31" Column="1" />
+      <File FileName="bidder/Data/SiteContext.cs" Line="20" Column="48" />
       <File FileName="bidder/Data/DbInitializer.cs" Line="15" Column="1" />
-      <File FileName="bidder/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="bidder/Controllers/HomeController.cs" Line="22" Column="1" />
       <File FileName="bidder/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="bidder/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="bidder/Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="bidder/UserContext.cs" Line="14" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="bidder" expanded="True">
             <Node name="bidder" expanded="True">
+              <Node name="ConnectedServicesFolder" selected="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Auction.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
@@ -37,11 +38,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.bidder PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.bidder PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

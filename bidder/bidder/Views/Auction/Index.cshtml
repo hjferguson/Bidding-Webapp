@@ -1,0 +1,83 @@
+@model IEnumerable<bidder.Auction>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.itemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.itemDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.startingBid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.reservePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.auctionStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.auctionEnd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.condition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.seller)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.itemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.itemDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.startingBid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.reservePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.auctionStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.auctionEnd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.condition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.seller.userID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.auctionID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.auctionID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.auctionID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
