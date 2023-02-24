@@ -16,7 +16,10 @@ namespace bidder.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Auction>().ToTable("Auction");
+            modelBuilder.Entity<Auction>().HasData(
+                new Auction(01, "Buffalo", 01);
+
+
             modelBuilder.Entity<User>().HasData(
                 new User(1, "mikeWheeler", "password", "mikewheeler@gmail.com"));
 
@@ -26,7 +29,7 @@ namespace bidder.Data
 
 
 
-            modelBuilder.Entity<Bid>().ToTable("Bid");
+            //modelBuilder.Entity<Bid>().ToTable("Bid");
         }
     }
 }

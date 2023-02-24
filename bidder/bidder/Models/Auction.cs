@@ -23,10 +23,11 @@ namespace bidder
 
 
 
-        public Auction(int auctionID, string itemName, User seller)
+        public Auction(int auctionID, string itemName, int sellerID)
 		{
 			this.auctionID = auctionID;
 			this.itemName = itemName;
+			this.sellerID = sellerID;
 
 		}
 
