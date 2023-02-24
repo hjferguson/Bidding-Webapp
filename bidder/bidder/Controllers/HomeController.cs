@@ -5,8 +5,6 @@ using System.Diagnostics;
 namespace bidder.Controllers
 {
     public class HomeController : Controller
-
-
     {
         private readonly ILogger<HomeController> _logger;
 
