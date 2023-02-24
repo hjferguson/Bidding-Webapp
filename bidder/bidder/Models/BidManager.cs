@@ -35,14 +35,11 @@ namespace bidder.Models
 		public Boolean addBid(Auction auction, User user, int amount)
 		{
 			Bid temp = new Bid(IdSeed, auction, user, amount);
-			bidList
+			numBids++;
+			return true;
 
 				//testing 
 		}
-
-
-
-
 	}
 }
 
