@@ -8,7 +8,6 @@ namespace bidder.Models
 		[Key]
 		public int? userID { get; set;}
 
-		[Required(ErrorMessage ="Username is invalid.")]
 		public string? username { get; set; }
         public string? password { get; set; }
         public string? firstName { get; set; }
@@ -29,6 +28,8 @@ namespace bidder.Models
 			verifiedStatus = false;
 
 		}
+
+		public User() { }
 
 
 

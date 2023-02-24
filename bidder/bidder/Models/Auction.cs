@@ -6,19 +6,31 @@ namespace bidder
 {
 	public class Auction
 	{
+		[Key]
 		public int auctionID { get; set; }
-		public Bid[]? bidList { get; set; }
         public string? itemName { get; set; }
-        public double startingBid { get; set; }
+
+
+		
+		public string? itemDescription { get; set; }
+
+		public double startingBid { get; set; }
         public double? reservePrice { get; set; }
+
         public DateTime? auctionStart { get; set; }
+
         public DateTime? auctionEnd { get; set; }
+
+
         public string? condition { get; set; }
-		[Range( 1,9, ErrorMessage = "Please Select a category.")]
+
+
+
+
         public string? category { get; set; }
+
         public int? sellerID { get; set; }
         public User? seller { get; set; }
-        public User? winner { get; set; }
 
 
 
@@ -30,6 +42,9 @@ namespace bidder
 			this.sellerID = sellerID;
 
 		}
+
+		public Auction() { }
+
 
 
 		public int getID()

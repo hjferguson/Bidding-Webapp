@@ -30,7 +30,7 @@ namespace bidder.Models
 
 
 
-		public void addAuction(int auctionID, string itemName, User sellerID)
+		public void addAuction(int auctionID, string itemName, int sellerID)
         {
 			Auction temp = new Auction(auctionSeed, itemName, sellerID);
 			auctionList[numAuctions] = temp;

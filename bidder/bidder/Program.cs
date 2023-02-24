@@ -1,7 +1,11 @@
 using bidder.Models;
+using bidder.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -12,7 +16,7 @@ builder.Services.AddRouting(options =>
 });
 
 builder.Services.AddDbContext<bidder.Data.SiteContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("SiteContext")));
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
