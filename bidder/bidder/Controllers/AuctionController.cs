@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using bidder;
 using bidder.Data;
 
+
+//Testting
+
 namespace bidder.Controllers
 {
     public class AuctionController : Controller
