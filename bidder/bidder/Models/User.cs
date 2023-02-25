@@ -1,16 +1,17 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace bidder.Models
 {
 	public class User
 	{
 		[Key]
-		private int userID;
-		private string? username;
-		private string? password;
-		private bool verifiedStatus;
-		private string? email;
+		public int userID { get; set; }
+		public string? username { get; set; }
+		public string? password { get; set; }
+		public bool verifiedStatus { get; set;}
+		public string? email { get; set; }
 
 
 
