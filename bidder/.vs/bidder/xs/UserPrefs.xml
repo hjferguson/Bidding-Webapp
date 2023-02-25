@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{11DDB2CD-EC18-4C54-AF28-D419F074AF01}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="bidder/Models/UserManager.cs">
+    <Files>
+      <File FileName="bidder/Models/User.cs" />
+      <File FileName="bidder/Models/AuctionManager.cs" />
+      <File FileName="bidder/Models/BidManager.cs" />
+      <File FileName="bidder/Models/UserManager.cs" Line="24" Column="3" />
+      <File FileName="bidder/Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="bidder" expanded="True">
+            <Node name="bidder" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="UserManager.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.bidder PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
