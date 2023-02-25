@@ -7,27 +7,29 @@ namespace bidder
 	public class Auction
 	{
 		[Key]
-		int auctionID;
-		string itemName;
-		double startingBid;
-		DateTime startTime;
-		DateTime endTime;
-		User seller;
+		int Id { get; set; }
+		string? itemName { get; set; }
+		double? startingBid { get; set; }
+		DateTime? startTime { get; set; }
+		DateTime? endTime { get; set; }
+		User? seller { get; set; }
 
 
 
 
-		public Auction(int auctionID, string itemName, User seller)
+		public Auction(string itemName)
 		{
-			this.auctionID = auctionID;
 			this.itemName = itemName;
 
 		}
 
+		public Auction() { }
+
+
 
 		public int getID()
 		{
-			return auctionID;
+			return Id;
 		}
 
 		public string getItemName()
@@ -35,10 +37,6 @@ namespace bidder
 			return itemName;
 		}
 
-		public double getStartingBid()
-		{
-			return startingBid;
-		}
 
 		public void setStartingBid(double startingBid)
 		{

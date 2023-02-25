@@ -16,7 +16,7 @@ namespace bidder.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Auction>().HasData(
-                new Auction(01, "Buffalo", 01));
+                new Auction("Buffalo"));
 
             modelBuilder.Entity<User>().HasData(
                 new User(1, "mikeWheeler", "password", "mikewheeler@gmail.com"));
