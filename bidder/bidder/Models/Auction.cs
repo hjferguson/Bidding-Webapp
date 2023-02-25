@@ -1,17 +1,18 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using bidder.Models;
 
 namespace bidder
 {
 	public class Auction
 	{
+		[Key]
 		int auctionID;
-		Bid[] bidList;
 		string itemName;
 		double startingBid;
-		double reservePrice;
+		DateTime startTime;
+		DateTime endTime;
 		User seller;
-		User winner;
 
 
 

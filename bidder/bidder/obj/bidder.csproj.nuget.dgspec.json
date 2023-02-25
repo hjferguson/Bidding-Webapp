@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Richard\\Source\\Repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj": {}
+    "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/bidder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Richard\\Source\\Repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj": {
+    "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/bidder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Richard\\Source\\Repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj",
+        "projectUniqueName": "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/bidder.csproj",
         "projectName": "bidder",
-        "projectPath": "C:\\Users\\Richard\\Source\\Repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj",
-        "packagesPath": "C:\\Users\\Richard\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Richard\\Source\\Repos\\Bidding-Webapp\\bidder\\bidder\\obj\\",
+        "projectPath": "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/bidder.csproj",
+        "packagesPath": "/Users/raleighdesmond/.nuget/packages/",
+        "outputPath": "/Users/raleighdesmond/Documents/GBC/Winter 2023/Web App Development/Bidding-Webapp/bidder/bidder/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Richard\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/raleighdesmond/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,13 +37,40 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
