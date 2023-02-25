@@ -1,29 +1,32 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using bidder.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
 
 namespace bidder
 {
 	public class Auction
 	{
 		[Key]
-		int Id { get; set; }
-		string? itemName { get; set; }
-		double? startingBid { get; set; }
-		DateTime? startTime { get; set; }
-		DateTime? endTime { get; set; }
-		User? seller { get; set; }
+		public int Id { get; set; }
+		public string? itemName { get; set; }
+		public double? startingBid { get; set; }
+		public DateTime? startTime { get; set; }
+		public DateTime? endTime { get; set; }
+		public User? seller { get; set; }
+		public int? sellerId { get; set; }
 
 
-
-
-		public Auction(string itemName)
+		public Auction(int Id, string itemName, int sellerId)
 		{
+			this.Id = Id;
 			this.itemName = itemName;
 
 		}
 
 		public Auction() { }
+
 
 
 
@@ -36,7 +39,6 @@ namespace bidder
 		{
 			return itemName;
 		}
-
 
 		public void setStartingBid(double startingBid)
 		{
