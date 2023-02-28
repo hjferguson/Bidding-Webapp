@@ -21,7 +21,10 @@ namespace bidder.Data
                 new Auction(01, "Buffalo", 01));
 
             modelBuilder.Entity<User>().HasData(
-                new User(1, "mikeWheeler", "password", "mikewheeler@gmail.com", "Seller"));
+                new User(1, "buyer", "buyer", "buyer@gmail.com", "Buyer"));
+                new User(2, "seller", "seller", "seller@gmail.com", "Seller");
+
+
 
 
         }
