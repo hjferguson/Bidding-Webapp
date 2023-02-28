@@ -16,9 +16,10 @@ namespace bidder
 		public DateTime? endTime { get; set; }
 		public User? seller { get; set; }
 		public int? sellerId { get; set; }
+		public string? image { get; set; }
 
 
-		public Auction(int Id, string itemName, int sellerId)
+        public Auction(int Id, string itemName, int sellerId)
 		{
 			this.Id = Id;
 			this.itemName = itemName;
