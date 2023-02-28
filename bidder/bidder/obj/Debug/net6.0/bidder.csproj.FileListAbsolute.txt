@@ -86,65 +86,132 @@ C:/Users/Richard/Source/Repos/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scop
 C:/Users/Richard/Source/Repos/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/projectbundle/bidder.bundle.scp.css
 C:/Users/Richard/Source/Repos/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.genruntimeconfig.cache
 C:/Users/Richard/Source/Repos/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/ref/bidder.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.csproj.AssemblyReference.cache
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.GeneratedMSBuildEditorConfig.editorconfig
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.AssemblyInfoInputs.cache
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.AssemblyInfo.cs
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.csproj.CoreCompileInputs.cache
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.MvcApplicationPartsAssemblyInfo.cache
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.RazorAssemblyInfo.cache
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.RazorAssemblyInfo.cs
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\refint\bidder.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.pdb
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\appsettings.Development.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\appsettings.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\bidder.staticwebassets.runtime.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\bidder.exe
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\bidder.deps.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\bidder.runtimeconfig.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\bidder.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\bidder.pdb
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Humanizer.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.Drawing.Common.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.Runtime.Caching.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.Security.Permissions.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\System.Windows.Extensions.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\staticwebassets.build.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\staticwebassets.development.json
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\scopedcss\bundle\bidder.styles.css
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\scopedcss\projectbundle\bidder.bundle.scp.css
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.csproj.CopyComplete
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\bidder.genruntimeconfig.cache
-G:\Desktop\FInal_Project\Bidding-Webapp\bidder\bidder\obj\Debug\net6.0\ref\bidder.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.csproj.AssemblyReference.cache
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.GeneratedMSBuildEditorConfig.editorconfig
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.AssemblyInfoInputs.cache
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.AssemblyInfo.cs
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.csproj.CoreCompileInputs.cache
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.MvcApplicationPartsAssemblyInfo.cache
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.RazorAssemblyInfo.cache
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.RazorAssemblyInfo.cs
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/refint/bidder.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.pdb
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/appsettings.Development.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/appsettings.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.staticwebassets.runtime.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.exe
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.deps.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.runtimeconfig.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.pdb
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Humanizer.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Drawing.Common.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Runtime.Caching.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Security.Permissions.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Windows.Extensions.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets.build.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets.development.json
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/bundle/bidder.styles.css
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/projectbundle/bidder.bundle.scp.css
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.csproj.CopyComplete
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.genruntimeconfig.cache
+G:/Desktop/FInal_Project/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/ref/bidder.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/appsettings.Development.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/appsettings.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.staticwebassets.runtime.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.deps.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.runtimeconfig.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/bidder.pdb
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Humanizer.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Runtime.Caching.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.csproj.AssemblyReference.cache
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.GeneratedMSBuildEditorConfig.editorconfig
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.AssemblyInfoInputs.cache
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.AssemblyInfo.cs
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.csproj.CoreCompileInputs.cache
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.MvcApplicationPartsAssemblyInfo.cache
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.RazorAssemblyInfo.cache
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.RazorAssemblyInfo.cs
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets/msbuild.bidder.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets/msbuild.build.bidder.props
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.bidder.props
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.bidder.props
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets.build.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/staticwebassets.development.json
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/bundle/bidder.styles.css
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/scopedcss/projectbundle/bidder.bundle.scp.css
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.csproj.CopyComplete
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/refint/bidder.dll
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.pdb
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/bidder.genruntimeconfig.cache
+/Users/raleighdesmond/Documents/GBC/Winter 2023/Data Structuresw/Assignment1/Bidding-Webapp/bidder/bidder/obj/Debug/net6.0/ref/bidder.dll
