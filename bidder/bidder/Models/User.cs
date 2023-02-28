@@ -11,19 +11,20 @@ namespace bidder.Models
 		public string? username { get; set; }
 		public string? password { get; set; }
 		public bool verifiedStatus { get; set;}
-		public string? type { get; set; }
+		public string? userType { get; set; }
 		public string? email { get; set; }
 
 
 
 
-		public User(int userID, string username, string password, string email)
+		public User(int userID, string username, string password, string email, string userType)
 		{
 			this.userID = userID;
 			this.username = username;
 			this.password = password;
 			this.email = email;
-			verifiedStatus = false;
+			this.userType = userType;
+			this.verifiedStatus = false;
 
 		}
 
