@@ -15,19 +15,15 @@ namespace bidder.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Auction>()
-       .HasKey(a => a.Id);
+            modelBuilder.Entity<Auction>().HasKey(a => a.Id);
             modelBuilder.Entity<Auction>().HasData(
-                new Auction(01, "Buffalo", 01));
+                new Auction() {Id = 1, itemName = "Buffalo", itemDescription = "Buffalo", startingBid = 15, startTime = DateTime.Now, endTime = DateTime.Now, condition = "New", type = "Buffalo", image = "Buffalo" });
 
             modelBuilder.Entity<User>().HasData(
-                new User(1, "buyer", "buyer", "buyer@gmail.com", "Buyer"));
-                new User(2, "seller", "seller", "seller@gmail.com", "Seller");
-
-
-
+                new User() {userID = 1, username = "buyer", password = "buyer", passwordConfirm = "buyer", email = "buyer@gmail.com", seller = false, buyer = true, firstName = "buy", lastName = "er" },
+                new User() {userID = 2, username = "seller", password = "seller", passwordConfirm = "seller", email = "seller@gmail.com", seller = true, buyer = false, firstName = "sel", lastName = "ler" });
+                
 
         }
     }
 }
-
