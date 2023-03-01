@@ -1,35 +1,37 @@
+@model bidder.Auction
+
 @{
     ViewData["Title"] = "Auction Register Page";
 }
 <div class="register-form">
-    <form>
+    <form asp-action="Index" method="post">
         <h2>Register</h2>
         <label for="productName">Product Name:</label>
-        <input type="text" id="productName" name="productName" required>
+        <input asp-for="@Model.itemName" type="text" id="productName" required>
 
         <label for="productDescription">Product Description:</label>
-        <input type="text" id="productDescription" name="productDescription" required>
+        <input asp-for="@Model.itemDescription" type="text" id="productDescription" required>
 
         <label for="minCost">Minimum Cost:</label>
-        <input type="number" id="minCost" name="minCost" required>
+        <input asp-for="@Model.startingBid" type="number" id="minCost" required>
 
         <label for="startDate">Start Date:</label>
-        <input type="datetime" id="startDate" name="startDate">
+        <input asp-for="@Model.startTime" type="datetime-local" id="startDate">
 
         <label for="endDate">End Date:</label>
-        <input type="datetime" id="endDate" name="endDate">
+        <input asp-for="@Model.endTime" type="datetime-local" id="endDate">
 
         <label for="condition">Condition:</label>
-        <select>
+        <select asp-for="@Model.condition">
             <option id="used" name="used">Used</option>
             <option id="new" name="new">New</option>
         </select>
 
         <label for="category">Category:</label>
-        <input type="text" id="category" name="category">
+        <input asp-for="@Model.type" type="text" id="category">
 
         <label for="image">Image:</label>
-        <input type="file" id="image" name="image">
+        <input asp-for="@Model.image" type="file" id="image">
 
         <input type="submit" value="Register">
     </form>
