@@ -17,6 +17,11 @@ body {
   margin-bottom: 60px;
 }
 
+.searchBar {
+    max-width: 60vw;
+
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
