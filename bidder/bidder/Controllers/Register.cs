@@ -1,4 +1,5 @@
 ﻿using bidder.Data;
+using bidder.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace bidder.Controllers
@@ -10,12 +11,20 @@ namespace bidder.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Index(bidder.Models.User model)
+        public async Task<IActionResult> Index(bidder.Models.User model)
         {
             if (!ModelState.IsValid) return View(model);
             if (model.password != model.passwordConfirm) return View(model);
             context.Users.Add(model);
             context.SaveChanges();
+            //start Harlan email code testing
+            var emailService = new EmailService("smtp.gmail.com", 587, "harlan.j.ferguson@gmail.com", "Pomle@$$hf8NTzzKDnJtLj"); //Not secure way of coding, but I'm running out of time
+            var from = "harlan.j.ferguson@gmail.com";
+            var to = model.email;
+            var subject = "Please confirm your R.O.J.H Auctions account";
+            var body = "test";
+            await emailService.SendEmailAsync(from, to, subject, body);
+            //end Harlan email code
             return RedirectToAction("Index","Home");
         }
         public Register(SiteContext cont)
@@ -23,5 +32,7 @@ namespace bidder.Controllers
             context = cont;
         }
         private SiteContext context;
+
+        
     }
 }
