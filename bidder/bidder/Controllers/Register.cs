@@ -18,7 +18,7 @@ namespace bidder.Controllers
             context.Users.Add(model);
             context.SaveChanges();
             //start Harlan email code testing
-            var emailService = new EmailService("smtp.gmail.com", 587, "harlan.j.ferguson@gmail.com", "Pomle@$$hf8NTzzKDnJtLj"); //Not secure way of coding, but I'm running out of time
+            var emailService = new EmailService("smtp.gmail.com", 587, "harlan.j.ferguson@gmail.com", "ahqovabdazcqxejg"); //Not secure way of coding, but I'm running out of time
             var from = "harlan.j.ferguson@gmail.com";
             var to = model.email;
             var subject = "Please confirm your R.O.J.H Auctions account";
