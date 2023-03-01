@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owen\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj": {}
+    "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owen\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj": {
+    "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owen\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj",
+        "projectUniqueName": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj",
         "projectName": "bidder",
-        "projectPath": "C:\\Users\\Owen\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj",
-        "packagesPath": "C:\\Users\\Owen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owen\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\obj\\",
+        "projectPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj",
+        "packagesPath": "C:\\Users\\Harlan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Owen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Harlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
