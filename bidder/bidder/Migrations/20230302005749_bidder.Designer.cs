@@ -12,7 +12,7 @@ using bidder.Data;
 namespace bidder.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20230301060617_bidder")]
+    [Migration("20230302005749_bidder")]
     partial class bidder
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -70,11 +70,11 @@ namespace bidder.Migrations
                         {
                             Id = 1,
                             condition = "New",
-                            endTime = new DateTime(2023, 3, 1, 1, 6, 17, 401, DateTimeKind.Local).AddTicks(9137),
-                            image = "Buffalo",
+                            endTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6766),
+                            image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 3, 1, 1, 6, 17, 401, DateTimeKind.Local).AddTicks(9104),
+                            startTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6731),
                             startingBid = 15.0,
                             type = "Buffalo"
                         });
