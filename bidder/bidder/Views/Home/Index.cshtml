@@ -5,6 +5,38 @@
 <div class="welcome">
     <h1>Welcome To R.O.J.H Auctions</h1>
     <p>Were so happy youre here, please login or register!</p>
+    <hr>
+    <div class="searchBar">
+        <input type="text" name="keyword">
+        <button type="submit">Search</button>
+    </div>
+    <table>
+        <tr>
+            <th>Item Name</th>
+            <th>Item Description</th>
+            <th>Starting Bid</th>
+            <th>End Time</th>
+            <th>Condition</th>
+            <th>Type</th>
+            <th>Image</th>
+        </tr>
+        <tbody>
+            @foreach (Auction a in Model)
+            {
+                <tr>
+                    <td>@a.itemName</td>
+                    <td>@a.itemDescription</td>
+                    <td>@a.startingBid</td>
+                    <td>@a.endTime</td>
+                    <td>@a.condition</td>
+                    <td>@a.type</td>
+                    <td>@a.image</td>
+                </tr>
+            }
+        </tbody>
+
+
+    </table>
 </div>
 
 
