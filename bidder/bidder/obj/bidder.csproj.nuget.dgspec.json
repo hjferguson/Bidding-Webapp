@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj": {}
+    "C:\\Users\\owenb\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj": {
+    "C:\\Users\\owenb\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj",
+        "projectUniqueName": "C:\\Users\\owenb\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj",
         "projectName": "bidder",
-        "projectPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\bidder.csproj",
-        "packagesPath": "C:\\Users\\Harlan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\ass1\\bidder\\bidder\\obj\\",
+        "projectPath": "C:\\Users\\owenb\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\bidder.csproj",
+        "packagesPath": "C:\\Users\\owenb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\owenb\\source\\repos\\Bidding-Webapp\\bidder\\bidder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Harlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\owenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
