@@ -68,11 +68,11 @@ namespace bidder.Migrations
                         {
                             Id = 1,
                             condition = "New",
-                            endTime = new DateTime(2023, 3, 1, 18, 12, 37, 594, DateTimeKind.Local).AddTicks(1294),
-                            image = "Buffalo",
+                            endTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6766),
+                            image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 3, 1, 18, 12, 37, 594, DateTimeKind.Local).AddTicks(1260),
+                            startTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6731),
                             startingBid = 15.0,
                             type = "Buffalo"
                         });

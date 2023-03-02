@@ -53,7 +53,7 @@ namespace bidder.Migrations
             migrationBuilder.InsertData(
                 table: "Auctions",
                 columns: new[] { "Id", "condition", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type" },
-                values: new object[] { 1, "New", new DateTime(2023, 3, 1, 1, 6, 17, 401, DateTimeKind.Local).AddTicks(9137), "Buffalo", "Buffalo", "Buffalo", new DateTime(2023, 3, 1, 1, 6, 17, 401, DateTimeKind.Local).AddTicks(9104), 15.0, "Buffalo" });
+                values: new object[] { 1, "New", new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6766), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6731), 15.0, "Buffalo" });
 
             migrationBuilder.InsertData(
                 table: "Users",
