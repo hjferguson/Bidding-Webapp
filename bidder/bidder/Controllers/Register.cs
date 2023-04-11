@@ -15,7 +15,7 @@ namespace bidder.Controllers
         {
             if (!ModelState.IsValid) return View(model);
             if (model.password != model.passwordConfirm) return View(model);
-            context.Users.Add(model);
+            context.Users?.Add(model);
             context.SaveChanges();
             //start Harlan email code testing
             var emailService = new EmailService("smtp.gmail.com", 587, "harlan.j.ferguson@gmail.com", "ahqovabdazcqxejg"); //Not secure way of coding, but I'm running out of time
@@ -25,6 +25,13 @@ namespace bidder.Controllers
             var body = "test";
             await emailService.SendEmailAsync(from, to, subject, body);
             //end Harlan email code
+
+            if (Request.Cookies.ContainsKey("user_credentials"))
+            {
+                var username = Request.Cookies["user_credentials"];
+                var user = context.Users?.ToArray().FirstOrDefault(x => x.username.Equals(username, StringComparison.Ordinal));
+                ViewBag.user = user;
+            }
             return RedirectToAction("Index","Home");
         }
         public Register(SiteContext cont)
