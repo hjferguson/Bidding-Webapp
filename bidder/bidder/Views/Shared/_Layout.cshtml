@@ -15,8 +15,14 @@
             <div class="navbar-links">
                 <a class="navbar-link" asp-controller="Home" asp-action="Index">Home</a>
                 <a class="navbar-link" asp-controller="Login">Login</a>
+                @if (ViewBag.user != null)
+                {
+                    if (ViewBag.user.seller)
+                    {
+                        <a class="navbar-link" asp-controller="Auction">Auction Register</a>
+                    }
+                }
                 <a class="navbar-link" asp-controller="Register">Register</a>
-                <a class="navbar-link" asp-controller="Auction">Auction Register</a>
             </div>
         </div>
     </header>

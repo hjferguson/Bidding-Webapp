@@ -16,8 +16,14 @@ namespace bidder.Controllers
             //Request.
             
             if (!ModelState.IsValid) return View(model);
-            context.Auctions.Add(model);
+            context.Auctions?.Add(model);
             context.SaveChanges();
+            if (Request.Cookies.ContainsKey("user_credentials"))
+            {
+                var username = Request.Cookies["user_credentials"];
+                var user = context.Users?.ToArray().FirstOrDefault(x => x.username.Equals(username, StringComparison.Ordinal));
+                ViewBag.user = user;
+            }
             return RedirectToAction("Index","Home");
         }
         public Auction(SiteContext cont)
