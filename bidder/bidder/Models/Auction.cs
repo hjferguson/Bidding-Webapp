@@ -13,7 +13,9 @@ namespace bidder
 		public string itemName { get; set; }
 		public string itemDescription { get; set; }
 		public double startingBid { get; set; }
-		public DateTime startTime { get; set; }
+        public double currentBid { get; set; }
+        public double winningBid { get; set; }
+        public DateTime startTime { get; set; }
 		public DateTime endTime { get; set; }
 		public string condition { get; set; }
 		public string type { get; set; }
@@ -36,10 +38,6 @@ namespace bidder
 		}
 		*/
 
-		public int getID()
-		{
-			return Id;
-		}
 	}
 }
 
