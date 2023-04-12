@@ -4,16 +4,16 @@
     ViewData["Title"] = "Register Page";
 }
 <div class="register-form">
-    <form asp-action="Index" method="post">
+    <form asp-action="AdminUserUpdateProcess" method="post">
         <h2>Register</h2>
+        <input asp-for="@Model.userID" type="hidden" id="productName">
+
         <label for="username">Username:</label>
-        <input asp-for="@Model.username" type="text" id="username" required>
+        <input asp-for="@Model.username" type="text" id="username">
 
-        <label for="password">Password:</label>
-        <input asp-for="@Model.password" type="password" id="password" required>
+        <input asp-for="@Model.password" type="hidden" id="password">
 
-        <label for="passwordConfirm">Confirm Password:</label>
-        <input asp-for="@Model.passwordConfirm" type="password" id="passwordConfirm" required>
+        <input asp-for="@Model.passwordConfirm" type="hidden" id="passwordConfirm">
 
         <label for="email">Email:</label>
         <input asp-for="@Model.email" type="email" id="email">
@@ -30,6 +30,6 @@
         <label for="last-name">Last Name:</label>
         <input asp-for="@Model.lastName" type="text" id="last-name">
 
-        <input type="submit" value="Register">
+        <input type="submit" value="Update">
     </form>
 </div>

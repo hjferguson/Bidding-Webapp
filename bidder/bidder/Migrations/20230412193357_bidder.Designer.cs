@@ -12,7 +12,7 @@ using bidder.Data;
 namespace bidder.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20230302005749_bidder")]
+    [Migration("20230412193357_bidder")]
     partial class bidder
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -70,11 +70,11 @@ namespace bidder.Migrations
                         {
                             Id = 1,
                             condition = "New",
-                            endTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6766),
+                            endTime = new DateTime(2023, 4, 12, 15, 33, 57, 557, DateTimeKind.Local).AddTicks(1015),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6731),
+                            startTime = new DateTime(2023, 4, 12, 15, 33, 57, 557, DateTimeKind.Local).AddTicks(969),
                             startingBid = 15.0,
                             type = "Buffalo"
                         });
@@ -87,6 +87,9 @@ namespace bidder.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("userID"), 1L, 1);
+
+                    b.Property<bool>("admin")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("buyer")
                         .HasColumnType("bit");
@@ -129,6 +132,7 @@ namespace bidder.Migrations
                         new
                         {
                             userID = 1,
+                            admin = false,
                             buyer = true,
                             email = "buyer@gmail.com",
                             firstName = "buy",
@@ -142,6 +146,7 @@ namespace bidder.Migrations
                         new
                         {
                             userID = 2,
+                            admin = false,
                             buyer = false,
                             email = "seller@gmail.com",
                             firstName = "sel",

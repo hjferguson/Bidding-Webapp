@@ -41,6 +41,7 @@ namespace bidder.Migrations
                     email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     seller = table.Column<bool>(type: "bit", nullable: false),
                     buyer = table.Column<bool>(type: "bit", nullable: false),
+                    admin = table.Column<bool>(type: "bit", nullable: false),
                     firstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     lastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     verifiedStatus = table.Column<bool>(type: "bit", nullable: false)
@@ -53,17 +54,17 @@ namespace bidder.Migrations
             migrationBuilder.InsertData(
                 table: "Auctions",
                 columns: new[] { "Id", "condition", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type" },
-                values: new object[] { 1, "New", new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6766), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6731), 15.0, "Buffalo" });
+                values: new object[] { 1, "New", new DateTime(2023, 4, 12, 15, 33, 57, 557, DateTimeKind.Local).AddTicks(1015), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 12, 15, 33, 57, 557, DateTimeKind.Local).AddTicks(969), 15.0, "Buffalo" });
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "userID", "buyer", "email", "firstName", "lastName", "password", "passwordConfirm", "seller", "username", "verifiedStatus" },
-                values: new object[] { 1, true, "buyer@gmail.com", "buy", "er", "buyer", "buyer", false, "buyer", false });
+                columns: new[] { "userID", "admin", "buyer", "email", "firstName", "lastName", "password", "passwordConfirm", "seller", "username", "verifiedStatus" },
+                values: new object[] { 1, false, true, "buyer@gmail.com", "buy", "er", "buyer", "buyer", false, "buyer", false });
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "userID", "buyer", "email", "firstName", "lastName", "password", "passwordConfirm", "seller", "username", "verifiedStatus" },
-                values: new object[] { 2, false, "seller@gmail.com", "sel", "ler", "seller", "seller", true, "seller", false });
+                columns: new[] { "userID", "admin", "buyer", "email", "firstName", "lastName", "password", "passwordConfirm", "seller", "username", "verifiedStatus" },
+                values: new object[] { 2, false, false, "seller@gmail.com", "sel", "ler", "seller", "seller", true, "seller", false });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

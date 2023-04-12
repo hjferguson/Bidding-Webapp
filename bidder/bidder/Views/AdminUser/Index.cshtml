@@ -3,7 +3,7 @@
 }
 <div class="Admin">
     <div>
-        <table>
+        <table class="table">
             <tr>
                 <th>User ID</th>
                 <th>Username</th>
@@ -20,18 +20,6 @@
                 @foreach (User a in Model)
                 {
                     <tr>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                        <td><hr></td>
-                    </tr>
-                    <tr>
                         <td>@a.userID</td>
                         <td>@a.username</td>
                         <td>@a.email</td>
@@ -40,8 +28,18 @@
                         <td>@a.firstName</td>
                         <td>@a.lastName</td>
                         <td>@a.verifiedStatus</td>
-                        <td><button>Update</button></td>
-                        <td><button>Delete</button></td>
+                        <td>
+                            <form asp-action="AdminUserUpdate" method="POST">
+                                <input type="hidden" name="aid" id="aid" value="@a.userID" />
+                                <button type="submit">Update</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form asp-action="AdminUserDelete" method="POST">
+                                <input type="hidden" name="aid" id="aid" value="@a.userID" />
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                 }
             </tbody>
