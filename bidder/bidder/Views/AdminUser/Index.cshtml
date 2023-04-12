@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Admin User Page";
+}
+<div class="Admin">
+    <div>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Seller</th>
+                <th>Buyer</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Verified</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <tbody>
+                @foreach (User a in Model)
+                {
+                    <tr>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                        <td><hr></td>
+                    </tr>
+                    <tr>
+                        <td>@a.userID</td>
+                        <td>@a.username</td>
+                        <td>@a.email</td>
+                        <td>@a.seller</td>
+                        <td>@a.buyer</td>
+                        <td>@a.firstName</td>
+                        <td>@a.lastName</td>
+                        <td>@a.verifiedStatus</td>
+                        <td><button>Update</button></td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
