@@ -38,6 +38,11 @@ namespace bidder
 		}
 		*/
 
+		public int getID()
+		{
+			return Id;
+		}
+
 	}
 }
 
