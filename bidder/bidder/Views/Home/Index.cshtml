@@ -6,11 +6,16 @@
     <h1>Welcome To R.O.J.H. Auctions</h1>
     <p>We're so happy you're here, please login or register!</p>
     <hr>
-    <div class="searchBar">
-        <input type="text" name="keyword">
-        <button type="submit">Search</button>
-        
-    </div>
+    
+    <form asp-action="Search" asp-controller="HomeController" method="get">
+        <input type="text" name="keyword" placeholder="Enter keyword here">
+        <select name="category">
+            <option value="">All Categories</option>
+            <option value=""
+        </select>
+    </form>
+
+
     <table>
         <tr>
             <th>Item Name</th>
