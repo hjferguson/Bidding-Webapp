@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using bidder.Data;
 
@@ -11,9 +12,10 @@ using bidder.Data;
 namespace bidder.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    partial class SiteContextModelSnapshot : ModelSnapshot
+    [Migration("20230413015418_AddCurrentAndWinningBidColumns")]
+    partial class AddCurrentAndWinningBidColumns
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,11 +76,12 @@ namespace bidder.Migrations
                         {
                             Id = 1,
                             condition = "New",
-                            endTime = new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7705),
+                            currentBid = 0.0,
+                            endTime = new DateTime(2023, 4, 12, 21, 54, 17, 997, DateTimeKind.Local).AddTicks(9972),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7670),
+                            startTime = new DateTime(2023, 4, 12, 21, 54, 17, 997, DateTimeKind.Local).AddTicks(9938),
                             startingBid = 15.0,
                             type = "Buffalo",
                             winningBid = 0.0
@@ -92,9 +95,6 @@ namespace bidder.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("userID"), 1L, 1);
-
-                    b.Property<bool>("admin")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("buyer")
                         .HasColumnType("bit");
@@ -137,44 +137,28 @@ namespace bidder.Migrations
                         new
                         {
                             userID = 1,
-                            admin = false,
                             buyer = true,
                             email = "buyer@gmail.com",
                             firstName = "buy",
                             lastName = "er",
-                            password = "123Password1$",
-                            passwordConfirm = "123Password1$",
+                            password = "buyer",
+                            passwordConfirm = "buyer",
                             seller = false,
                             username = "buyer",
-                            verifiedStatus = true
+                            verifiedStatus = false
                         },
                         new
                         {
                             userID = 2,
-                            admin = false,
                             buyer = false,
                             email = "seller@gmail.com",
                             firstName = "sel",
                             lastName = "ler",
-                            password = "123Password1$",
-                            passwordConfirm = "123Password1$",
+                            password = "seller",
+                            passwordConfirm = "seller",
                             seller = true,
                             username = "seller",
-                            verifiedStatus = true
-                        },
-                        new
-                        {
-                            userID = 3,
-                            admin = true,
-                            buyer = true,
-                            email = "admin@gmail.com",
-                            firstName = "ad",
-                            lastName = "min",
-                            password = "123Password1$",
-                            passwordConfirm = "123Password1$",
-                            seller = false,
-                            username = "admin",
-                            verifiedStatus = true
+                            verifiedStatus = false
                         });
                 });
 #pragma warning restore 612, 618
