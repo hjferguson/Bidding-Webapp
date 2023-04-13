@@ -1,0 +1,40 @@
+﻿@model bidder.Auction
+
+@{
+    ViewData["Title"] = "Admin Register Page";
+}
+<div class="register-form">
+    <form asp-action="AdminItemUpdateProcess" method="post">
+        <h2>Register</h2>
+        <input asp-for="@Model.Id" type="hidden" id="AuctionID">
+
+        <label for="productName">Product Name:</label>
+        <input asp-for="@Model.itemName" type="text" id="productName" required>
+
+        <label for="productDescription">Product Description:</label>
+        <input asp-for="@Model.itemDescription" type="text" id="productDescription" required>
+
+        <label for="minCost">Minimum Cost:</label>
+        <input asp-for="@Model.startingBid" type="number" id="minCost" required>
+
+        <label for="startDate">Start Date:</label>
+        <input asp-for="@Model.startTime" type="datetime-local" id="startDate">
+
+        <label for="endDate">End Date:</label>
+        <input asp-for="@Model.endTime" type="datetime-local" id="endDate">
+
+        <label for="condition">Condition:</label>
+        <select asp-for="@Model.condition">
+            <option id="used" name="used">Used</option>
+            <option id="new" name="new">New</option>
+        </select>
+
+        <label for="category">Category:</label>
+        <input asp-for="@Model.type" type="text" id="category">
+
+        <label for="image">Image URL:</label>
+        <input asp-for="@Model.image" type="text" id="image">
+
+        <input type="submit" value="Update">
+    </form>
+</div>

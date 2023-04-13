@@ -11,7 +11,7 @@
         <button type="submit">Search</button>
         
     </div>
-    <table>
+    <table class="table">
         <tr>
             <th>Item Name</th>
             <th>Item Description</th>
@@ -24,15 +24,7 @@
         <tbody>
             @foreach (Auction a in Model)
             {
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
+
                 <tr>
                     <td>@a.itemName</td>
                     <td>@a.itemDescription</td>

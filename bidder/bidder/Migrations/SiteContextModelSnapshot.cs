@@ -68,11 +68,11 @@ namespace bidder.Migrations
                         {
                             Id = 1,
                             condition = "New",
-                            endTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6766),
+                            endTime = new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7705),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 3, 1, 19, 57, 49, 761, DateTimeKind.Local).AddTicks(6731),
+                            startTime = new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7670),
                             startingBid = 15.0,
                             type = "Buffalo"
                         });
@@ -85,6 +85,9 @@ namespace bidder.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("userID"), 1L, 1);
+
+                    b.Property<bool>("admin")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("buyer")
                         .HasColumnType("bit");
@@ -127,28 +130,44 @@ namespace bidder.Migrations
                         new
                         {
                             userID = 1,
+                            admin = false,
                             buyer = true,
                             email = "buyer@gmail.com",
                             firstName = "buy",
                             lastName = "er",
-                            password = "buyer",
-                            passwordConfirm = "buyer",
+                            password = "123Password1$",
+                            passwordConfirm = "123Password1$",
                             seller = false,
                             username = "buyer",
-                            verifiedStatus = false
+                            verifiedStatus = true
                         },
                         new
                         {
                             userID = 2,
+                            admin = false,
                             buyer = false,
                             email = "seller@gmail.com",
                             firstName = "sel",
                             lastName = "ler",
-                            password = "seller",
-                            passwordConfirm = "seller",
+                            password = "123Password1$",
+                            passwordConfirm = "123Password1$",
                             seller = true,
                             username = "seller",
-                            verifiedStatus = false
+                            verifiedStatus = true
+                        },
+                        new
+                        {
+                            userID = 3,
+                            admin = true,
+                            buyer = true,
+                            email = "admin@gmail.com",
+                            firstName = "ad",
+                            lastName = "min",
+                            password = "123Password1$",
+                            passwordConfirm = "123Password1$",
+                            seller = false,
+                            username = "admin",
+                            verifiedStatus = true
                         });
                 });
 #pragma warning restore 612, 618
