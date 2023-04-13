@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 namespace bidder.Controllers
 
 {
-    public class AdminUser : Controller
+    public class AdminUserController : Controller
     {
-        public AdminUser(SiteContext cont)
+        public AdminUserController(SiteContext cont)
         {
             context = cont;
         }
@@ -31,8 +31,6 @@ namespace bidder.Controllers
         [HttpPost("AdminUserUpdateProcess")]
         public IActionResult AdminUserUpdateProcess(User user)
         {
-            //User? user = context.Users?.Find(user);
-            //if (user == null) return RedirectToAction("Index");
             if (!ModelState.IsValid) return View("AdminUserUpdate", user);
 
             context.Users?.Update(user);

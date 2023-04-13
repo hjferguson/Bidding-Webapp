@@ -1,12 +1,12 @@
 ﻿@model bidder.Models.User
 
 @{
-    ViewData["Title"] = "Register Page";
+    ViewData["Title"] = "Admin Register Page";
 }
 <div class="register-form">
     <form asp-action="AdminUserUpdateProcess" method="post">
         <h2>Register</h2>
-        <input asp-for="@Model.userID" type="hidden" id="productName">
+        <input asp-for="@Model.userID" type="hidden" id="UserID">
 
         <label for="username">Username:</label>
         <input asp-for="@Model.username" type="text" id="username">

@@ -4,9 +4,9 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace bidder.Controllers
 {
-    public class Login : Controller
+    public class LoginController : Controller
     {
-        public Login(SiteContext cont)
+        public LoginController(SiteContext cont)
         {
             context = cont;
         }

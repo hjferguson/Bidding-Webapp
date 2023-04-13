@@ -26,13 +26,13 @@
                     <td>@a.type</td>
                     <td><img src="@a.image" width="100" height="100"></td>
                     <td>
-                        <form asp-action="AdminUserUpdate" method="POST">
+                        <form asp-action="AdminItemUpdate" method="POST">
                             <input type="hidden" name="aid" id="aid" value="@a.Id" />
                             <button type="submit">Update</button>
                         </form>
                     </td>
                     <td>
-                        <form asp-action="AdminUserDelete" method="POST">
+                        <form asp-action="AdminItemDelete" method="POST">
                             <input type="hidden" name="aid" id="aid" value="@a.Id" />
                             <button type="submit">Delete</button>
                         </form>
