@@ -8,19 +8,13 @@ namespace bidder.Controllers
 {
     public class HomeController : Controller
     {
-        /*
-        private readonly ILogger<HomeController> _logger;
+        private SiteContext context;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-        */
         public HomeController(SiteContext cont)
         {
             context = cont;
         }
-        private SiteContext context;
+
         public IActionResult Index(string keyword = "", string category = "", string status = "")
         {
             //Reads if a cookie exists, then finds the user and saves it in the viewbag with name user, entire db object saved
@@ -42,14 +36,20 @@ namespace bidder.Controllers
             {
                 switch (category)
                 {
-                    case "itemName":
-                        auctions = auctions.OrderBy(a => a.itemName);
+                    case "new":
+                        auctions = auctions.Where(a => a.condition == "new");
                         break;
-                    case "condition":
-                        auctions = auctions.OrderBy(a => a.condition);
+                    case "used":
+                        auctions = auctions.Where(a => a.condition == "used");
                         break;
-                    case "type":
-                        auctions = auctions.OrderBy(a => a.type);
+                    case "older":
+                        auctions = auctions.Where(a => a.endTime < DateTime.Now);
+                        break;
+                    case "newer":
+                        auctions = auctions.Where(a => a.startTime > DateTime.Now);
+                        break;
+                
+                    default:
                         break;
                 }
             }
@@ -67,13 +67,18 @@ namespace bidder.Controllers
                     case "winningBid":
                         auctions = auctions.OrderByDescending(a => a.currentBid);
                         break;
+                    default:
+                        auctions = auctions.OrderBy(a => a.currentBid);
+                        break;
                 }
+            }
+            else
+            {
+                auctions = auctions.OrderBy(a => a.currentBid);
             }
 
             return View(auctions.ToList());
         }
-
-
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

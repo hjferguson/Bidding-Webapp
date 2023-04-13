@@ -5,26 +5,26 @@
 
 <div class="welcome">
     <h1>Welcome To R.O.J.H. Auctions</h1>
-    <p>We're so happy you're here, please login or register!</p>
+    <p>We're so happy you're here!</p>
     <hr>
     
     <form asp-action="Index" asp-controller="Home" method="get">
         <input type="text" name="keyword" placeholder="Enter keyword here">
         <select name="category">
-            <option value="">All Categories</option>
-            <option value="itemName">Item Name</option>
-            <option value="condition">Condition</option>
-            <option value="type">Type</option>
+            <option value="">All</option>
+            <option value="new">New</option>
+            <option value="used">Used</option>
+            <option value="older">Older (post history)</option>
+            <option value="newer">Newer</option>
         </select>
         <select name="status">
-            <option value="">All Statuses</option>
+            <option value="currentBid" selected>Current Bid</option>
             <option value="startingBid">Starting Bid</option>
-            <option value="currentBid">Current Bid</option>
             <option value="winningBid">Winning Bid</option>
         </select>
         <button type="submit">Search</button>
-
     </form>
+
  
 </div>
     <table class="table">
