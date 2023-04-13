@@ -18,6 +18,10 @@ namespace bidder.Migrations
                     itemName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     itemDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     startingBid = table.Column<double>(type: "float", nullable: false),
+                    //SQL error that was missing columns. Added these columns mimicing the auction class. HF
+                    currentBid = table.Column<double>(type:"float", nullable: false),
+                    winningBid = table.Column<double>(type: "float", nullable: false),
+                    //
                     startTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     endTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     condition = table.Column<string>(type: "nvarchar(max)", nullable: false),
