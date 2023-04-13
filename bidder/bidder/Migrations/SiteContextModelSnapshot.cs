@@ -74,11 +74,12 @@ namespace bidder.Migrations
                         {
                             Id = 1,
                             condition = "New",
-                            endTime = new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7705),
+                            currentBid = 0.0,
+                            endTime = new DateTime(2023, 4, 13, 1, 49, 19, 82, DateTimeKind.Local).AddTicks(9412),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7670),
+                            startTime = new DateTime(2023, 4, 13, 1, 49, 19, 82, DateTimeKind.Local).AddTicks(9381),
                             startingBid = 15.0,
                             type = "Buffalo",
                             winningBid = 0.0
