@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\assignment2\\bidder\\bidder\\bidder.csproj": {}
+    "C:\\Users\\Richard\\OneDrive\\Desktop\\Final Web Project\\bidder\\bidder\\bidder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\assignment2\\bidder\\bidder\\bidder.csproj": {
+    "C:\\Users\\Richard\\OneDrive\\Desktop\\Final Web Project\\bidder\\bidder\\bidder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\assignment2\\bidder\\bidder\\bidder.csproj",
+        "projectUniqueName": "C:\\Users\\Richard\\OneDrive\\Desktop\\Final Web Project\\bidder\\bidder\\bidder.csproj",
         "projectName": "bidder",
-        "projectPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\assignment2\\bidder\\bidder\\bidder.csproj",
-        "packagesPath": "C:\\Users\\Harlan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Harlan\\Desktop\\School_Work\\Sem_4\\WebApp\\assignment2\\bidder\\bidder\\obj\\",
+        "projectPath": "C:\\Users\\Richard\\OneDrive\\Desktop\\Final Web Project\\bidder\\bidder\\bidder.csproj",
+        "packagesPath": "C:\\Users\\Richard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Richard\\OneDrive\\Desktop\\Final Web Project\\bidder\\bidder\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Harlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Richard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,8 +71,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
