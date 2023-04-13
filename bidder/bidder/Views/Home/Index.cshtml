@@ -6,12 +6,28 @@
     <h1>Welcome To R.O.J.H. Auctions</h1>
     <p>We're so happy you're here, please login or register!</p>
     <hr>
-    <div class="searchBar">
-        <input type="text" name="keyword">
+    
+    <form asp-action="Search" asp-controller="HomeController" method="get">
+        <input type="text" name="keyword" placeholder="Enter keyword here">
+        <select name="category">
+            <option value="">All Categories</option>
+            <option value="itemName">Item Name</option>
+            <option value="condition">Condition</option>
+            <option value="type">Type</option>
+        </select>
+        <select name="status">
+            <option value="">All Statuses</option>
+            <option value="startingBid">Starting Bid</option>
+            <option value="currentBid">Current Bid</option>
+            <option value="winningBid">Winning Bid</option>
+        </select>
         <button type="submit">Search</button>
-        
+
+    </form>
+ 
     </div>
     <table class="table">
+
         <tr>
             <th>Item Name</th>
             <th>Item Description</th>

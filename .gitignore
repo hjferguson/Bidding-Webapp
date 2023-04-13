@@ -348,3 +348,9 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Additional build files to ignore
+obj/Debug/net6.0/bidder.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/bidder.assets.cache
+obj/Debug/net6.0/project.razor.vs.json
+
