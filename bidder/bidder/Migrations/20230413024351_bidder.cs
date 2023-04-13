@@ -54,17 +54,17 @@ namespace bidder.Migrations
             migrationBuilder.InsertData(
                 table: "Auctions",
                 columns: new[] { "Id", "condition", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type" },
-                values: new object[] { 1, "New", new DateTime(2023, 4, 12, 15, 33, 57, 557, DateTimeKind.Local).AddTicks(1015), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 12, 15, 33, 57, 557, DateTimeKind.Local).AddTicks(969), 15.0, "Buffalo" });
+                values: new object[] { 1, "New", new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7705), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 12, 22, 43, 51, 277, DateTimeKind.Local).AddTicks(7670), 15.0, "Buffalo" });
 
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "userID", "admin", "buyer", "email", "firstName", "lastName", "password", "passwordConfirm", "seller", "username", "verifiedStatus" },
-                values: new object[] { 1, false, true, "buyer@gmail.com", "buy", "er", "buyer", "buyer", false, "buyer", false });
-
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "userID", "admin", "buyer", "email", "firstName", "lastName", "password", "passwordConfirm", "seller", "username", "verifiedStatus" },
-                values: new object[] { 2, false, false, "seller@gmail.com", "sel", "ler", "seller", "seller", true, "seller", false });
+                values: new object[,]
+                {
+                    { 1, false, true, "buyer@gmail.com", "buy", "er", "123Password1$", "123Password1$", false, "buyer", true },
+                    { 2, false, false, "seller@gmail.com", "sel", "ler", "123Password1$", "123Password1$", true, "seller", true },
+                    { 3, true, true, "admin@gmail.com", "ad", "min", "123Password1$", "123Password1$", false, "admin", true }
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
