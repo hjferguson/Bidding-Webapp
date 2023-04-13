@@ -350,7 +350,9 @@ MigrationBackup/
 .ionide/
 
 # Additional build files to ignore
+#these should be ignored under obj/ but are still popping up. I initially set up the repo incorrectly.
 obj/Debug/net6.0/bidder.GeneratedMSBuildEditorConfig.editorconfig
 obj/Debug/net6.0/bidder.assets.cache
 obj/Debug/net6.0/project.razor.vs.json
+obj/Debug/net6.0/bidder.csproj.CoreCompileInputs.cache
 
