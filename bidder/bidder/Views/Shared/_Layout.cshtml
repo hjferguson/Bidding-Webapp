@@ -24,9 +24,15 @@
                     {
                         <a class="navbar-link" asp-controller="Auction">Auction Register</a>
                     }
+                    if (ViewBag.user.admin)
+                    {
+                        <a class="navbar-link" asp-controller="AdminItem">Admin Items</a>
+                        <a class="navbar-link" asp-controller="AdminUser">Admin Users</a>
+                    }
                 }
                 <a class="navbar-link" asp-controller="Register">Register</a>
-                <a class="navbar-link" asp-controller="Admin">Admin</a>
+
+
             </div>
         </div>
     </header>

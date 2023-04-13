@@ -14,6 +14,7 @@ namespace bidder.Models
         public string email { get; set; }
         public bool seller { get; set; }
 		public bool buyer { get; set; }
+		public bool admin { get; set; }
 		public string firstName { get; set; }
 		public string lastName { get; set; }
         public bool verifiedStatus { get; set; }

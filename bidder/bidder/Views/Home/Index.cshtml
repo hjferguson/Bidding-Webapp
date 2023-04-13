@@ -22,9 +22,12 @@
             <option value="winningBid">Winning Bid</option>
         </select>
         <button type="submit">Search</button>
-    </form>
 
-    <table>
+    </form>
+ 
+    </div>
+    <table class="table">
+
         <tr>
             <th>Item Name</th>
             <th>Item Description</th>
@@ -37,15 +40,7 @@
         <tbody>
             @foreach (Auction a in Model)
             {
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
+
                 <tr>
                     <td>@a.itemName</td>
                     <td>@a.itemDescription</td>
