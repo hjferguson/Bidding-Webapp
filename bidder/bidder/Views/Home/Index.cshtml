@@ -1,53 +1,74 @@
-﻿@{
+﻿@using bidder;
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="welcome">
     <h1>Welcome To R.O.J.H. Auctions</h1>
-    <p>We're so happy you're here, please login or register!</p>
+    <p>We're so happy you're here!</p>
     <hr>
-    <div class="searchBar">
-        <input type="text" name="keyword">
+
+    <form asp-action="Index" asp-controller="Home" method="get">
+        <input type="text" name="keyword" placeholder="Enter keyword here">
+        <select name="category">
+            <option value="">All</option>
+            <option value="new">New</option>
+            <option value="used">Used</option>
+            <option value="older">Older (post history)</option>
+            <option value="newer">Newer</option>
+        </select>
+        <select name="status">
+            <option value="currentBid" selected>Current Bid</option>
+            <option value="startingBid">Starting Bid</option>
+            <option value="winningBid">Winning Bid</option>
+        </select>
         <button type="submit">Search</button>
-        
-    </div>
-    <table>
-        <tr>
-            <th>Item Name</th>
-            <th>Item Description</th>
-            <th>Starting Bid</th>
-            <th>End Time</th>
-            <th>Condition</th>
-            <th>Type</th>
-            <th>Image</th>
-        </tr>
-        <tbody>
-            @foreach (Auction a in Model)
-            {
-                <tr>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                    <td><hr></td>
-                </tr>
-                <tr>
-                    <td>@a.itemName</td>
-                    <td>@a.itemDescription</td>
-                    <td>@a.startingBid</td>
-                    <td>@a.endTime</td>
-                    <td>@a.condition</td>
-                    <td>@a.type</td>
-                    <td><img src="@a.image" width="100" height="100"></td>
-                </tr>
-
-            }
-        </tbody>
-
-    </table>
+    </form>
 </div>
-
-
-
+<table class="table">
+    <tr>
+        <th>Item Name</th>
+        <th>Item Description</th>
+        <th>@ViewBag.Status</th>
+        <th>End Time</th>
+        <th>Condition</th>
+        <th>Type</th>
+        <th>Image</th>
+    </tr>
+    <tbody>
+        @foreach (Auction a in Model)
+        {
+            <tr>
+                <td>@a.itemName</td>
+                <td>@a.itemDescription</td>
+                <td>
+                    @{
+                        switch (ViewBag.Status)
+                        {
+                            case "Starting Bid":
+                                @a.startingBid
+                                ;
+                                break;
+                            case "Current Bid":
+                                @a.currentBid
+                                ;
+                                break;
+                            case "Winning Bid":
+                                @a.currentBid
+                                ;
+                                break;
+                            default:
+                                @a.currentBid
+                                ;
+                                break;
+                        }
+                    }
+                </td>
+                <td>@a.endTime</td>
+                <td>@a.condition</td>
+                <td>@a.type</td>
+                <td><img src="@a.image" width="100" height="100"></td>
+            </tr>
+        }
+    </tbody>
+</table>

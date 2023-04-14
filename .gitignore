@@ -348,3 +348,22 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Additional build files to ignore
+#these should be ignored under obj/ but are still popping up. I initially set up the repo incorrectly.
+obj/Debug/net6.0/bidder.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/bidder.assets.cache
+obj/Debug/net6.0/project.razor.vs.json
+obj/Debug/net6.0/bidder.csproj.CoreCompileInputs.cache
+
+/bidder/bidder/obj/Debug/net6.0/bidder.AssemblyInfo.cs
+/bidder/bidder/obj/project.nuget.cache
+/bidder/bidder/obj/project.assets.json
+/bidder/bidder/obj/bidder.csproj.nuget.g.props
+/bidder/bidder/obj/bidder.csproj.nuget.dgspec.json
+/bidder/bidder/obj/Debug/net6.0/staticwebassets.development.json
+/bidder/bidder/obj/Debug/net6.0/staticwebassets.build.json
+/bidder/bidder/obj/Debug/net6.0/bidder.genruntimeconfig.cache
+/bidder/bidder/obj/Debug/net6.0/bidder.csproj.CoreCompileInputs.cache
+/bidder/bidder/obj/Debug/net6.0/apphost.exe
+/bidder/bidder/bin/Debug/net6.0/bidder.staticwebassets.runtime.json

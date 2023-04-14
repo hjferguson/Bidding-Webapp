@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace bidder.Controllers
 {
-    public class Register : Controller
+    public class RegisterController : Controller
     {
         public IActionResult Index()
         {
@@ -34,7 +34,7 @@ namespace bidder.Controllers
             }
             return RedirectToAction("Index","Home");
         }
-        public Register(SiteContext cont)
+        public RegisterController(SiteContext cont)
         {
             context = cont;
         }

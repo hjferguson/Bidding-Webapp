@@ -15,14 +15,26 @@
             <div class="navbar-links">
                 <a class="navbar-link" asp-controller="Home" asp-action="Index">Home</a>
                 <a class="navbar-link" asp-controller="Login">Login</a>
+                <a  asp-controller="Login">
+                    <div class="icon-container">
+                        <img src="https://icons-for-free.com/iconfiles/png/512/shopping+cart-131964743721771194.png" alt="Shopping Cart Icon">
+                        </div>
+                </a>
                 @if (ViewBag.user != null)
                 {
                     if (ViewBag.user.seller)
                     {
                         <a class="navbar-link" asp-controller="Auction">Auction Register</a>
                     }
+                    if (ViewBag.user.admin)
+                    {
+                        <a class="navbar-link" asp-controller="AdminItem">Admin Items</a>
+                        <a class="navbar-link" asp-controller="AdminUser">Admin Users</a>
+                    }
                 }
                 <a class="navbar-link" asp-controller="Register">Register</a>
+
+
             </div>
         </div>
     </header>

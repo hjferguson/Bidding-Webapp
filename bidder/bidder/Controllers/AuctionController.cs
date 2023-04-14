@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
 namespace bidder.Controllers
 {
-    public class Auction : Controller
+    public class AuctionController : Controller
     {
         public IActionResult Index()
         {
@@ -26,11 +26,10 @@ namespace bidder.Controllers
             }
             return RedirectToAction("Index","Home");
         }
-        public Auction(SiteContext cont)
+        public AuctionController(SiteContext cont)
         {
             context = cont;
         }
         private SiteContext context;
-
     }
 }

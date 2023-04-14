@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Admin Item Page";
+}
+<div class="Admin">
+    <table class="table">
+        <tr>
+            <th>Item Name</th>
+            <th>Item Description</th>
+            <th>Starting Bid</th>
+            <th>End Time</th>
+            <th>Condition</th>
+            <th>Type</th>
+            <th>Image</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <tbody>
+            @foreach (Auction a in Model)
+            {
+                <tr>
+                    <td>@a.itemName</td>
+                    <td>@a.itemDescription</td>
+                    <td>@a.startingBid</td>
+                    <td>@a.endTime</td>
+                    <td>@a.condition</td>
+                    <td>@a.type</td>
+                    <td><img src="@a.image" width="100" height="100"></td>
+                    <td>
+                        <form asp-action="AdminItemUpdate" method="POST">
+                            <input type="hidden" name="aid" id="aid" value="@a.Id" />
+                            <button type="submit">Update</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-action="AdminItemDelete" method="POST">
+                            <input type="hidden" name="aid" id="aid" value="@a.Id" />
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                    @*<td><button id="@a.itemName" onclick="AdminItemUpdate()">Update</button></td>*@
+                    @*<td><button id="@a.itemName" onclick="AdminItemDelete()">Delete</button></td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
