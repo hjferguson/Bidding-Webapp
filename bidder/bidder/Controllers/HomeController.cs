@@ -17,7 +17,6 @@ namespace bidder.Controllers
 
         public IActionResult Index(string keyword = "", string category = "", string status = "")
         {
-            //Reads if a cookie exists, then finds the user and saves it in the viewbag with name user, entire db object saved
             if (Request.Cookies.ContainsKey("user_credentials"))
             {
                 var username = Request.Cookies["user_credentials"];
@@ -48,7 +47,6 @@ namespace bidder.Controllers
                     case "newer":
                         auctions = auctions.Where(a => a.startTime > DateTime.Now);
                         break;
-                
                     default:
                         break;
                 }
@@ -60,26 +58,30 @@ namespace bidder.Controllers
                 {
                     case "startingBid":
                         auctions = auctions.OrderBy(a => a.startingBid);
+                        ViewBag.Status = "Starting Bid";
                         break;
                     case "currentBid":
                         auctions = auctions.OrderBy(a => a.currentBid);
+                        ViewBag.Status = "Current Bid";
                         break;
                     case "winningBid":
                         auctions = auctions.OrderByDescending(a => a.currentBid);
+                        ViewBag.Status = "Winning Bid";
                         break;
                     default:
                         auctions = auctions.OrderBy(a => a.currentBid);
+                        ViewBag.Status = "Current Bid";
                         break;
                 }
             }
             else
             {
                 auctions = auctions.OrderBy(a => a.currentBid);
+                ViewBag.Status = "Current Bid";
             }
 
             return View(auctions.ToList());
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

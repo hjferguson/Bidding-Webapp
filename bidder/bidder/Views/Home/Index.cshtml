@@ -7,7 +7,7 @@
     <h1>Welcome To R.O.J.H. Auctions</h1>
     <p>We're so happy you're here!</p>
     <hr>
-    
+
     <form asp-action="Index" asp-controller="Home" method="get">
         <input type="text" name="keyword" placeholder="Enter keyword here">
         <select name="category">
@@ -24,35 +24,51 @@
         </select>
         <button type="submit">Search</button>
     </form>
-
- 
 </div>
-    <table class="table">
-
-        <tr>
-            <th>Item Name</th>
-            <th>Item Description</th>
-            <th>Starting Bid</th>
-            <th>End Time</th>
-            <th>Condition</th>
-            <th>Type</th>
-            <th>Image</th>
-        </tr>
-        <tbody>
-            @foreach (Auction a in Model)
-            {
-
-                <tr>
-                    <td>@a.itemName</td>
-                    <td>@a.itemDescription</td>
-                    <td>@a.startingBid</td>
-                    <td>@a.endTime</td>
-                    <td>@a.condition</td>
-                    <td>@a.type</td>
-                    <td><img src="@a.image" width="100" height="100"></td>
-                </tr>
-
-            }
-        </tbody>
-
-    </table>
+<table class="table">
+    <tr>
+        <th>Item Name</th>
+        <th>Item Description</th>
+        <th>@ViewBag.Status</th>
+        <th>End Time</th>
+        <th>Condition</th>
+        <th>Type</th>
+        <th>Image</th>
+    </tr>
+    <tbody>
+        @foreach (Auction a in Model)
+        {
+            <tr>
+                <td>@a.itemName</td>
+                <td>@a.itemDescription</td>
+                <td>
+                    @{
+                        switch (ViewBag.Status)
+                        {
+                            case "Starting Bid":
+                                @a.startingBid
+                                ;
+                                break;
+                            case "Current Bid":
+                                @a.currentBid
+                                ;
+                                break;
+                            case "Winning Bid":
+                                @a.currentBid
+                                ;
+                                break;
+                            default:
+                                @a.currentBid
+                                ;
+                                break;
+                        }
+                    }
+                </td>
+                <td>@a.endTime</td>
+                <td>@a.condition</td>
+                <td>@a.type</td>
+                <td><img src="@a.image" width="100" height="100"></td>
+            </tr>
+        }
+    </tbody>
+</table>
