@@ -1,14 +1,44 @@
 ﻿@{
     ViewData["Title"] = "FullItem";
 }
-<div class="FullItem">
-    @if (ViewBag.auction != null){
-        <p>
-            @ViewBag.auction.Id
-            @ViewBag.auction.currentBid
-            @ViewBag.auction.winningBid
-            @ViewBag.auction.startingBid
-            @ViewBag.auction.itemName
-        </p>
-    }
+<div class="auction-item">
+    <div class="auction-image">
+        <img src="@ViewBag.auction.image" alt="@ViewBag.auction.itemName">
+    </div>
+    <div class="auction-details">
+        <h1>@ViewBag.auction.itemName</h1>
+        <p>@ViewBag.auction.itemDescription</p>
+        <div class="auction-bids">
+            <div class="auction-bid">
+                <span>Starting Bid:</span>
+                <span>@ViewBag.auction.startingBid</span>
+            </div>
+            <div class="auction-bid">
+                <span>Current Bid:</span>
+                <span>@ViewBag.auction.currentBid</span>
+            </div>
+            <div class="auction-bid">
+                <span>Winning Bid:</span>
+                <span>@ViewBag.auction.winningBid</span>
+            </div>
+        </div>
+        <div class="auction-times">
+            <div class="auction-time">
+                <span>Start Time:</span>
+                <span>@ViewBag.auction.startTime</span>
+            </div>
+            <div class="auction-time">
+                <span>End Time:</span>
+                <span>@ViewBag.auction.endTime</span>
+            </div>
+        </div>
+        <div class="auction-type">
+            <span>Type:</span>
+            <span>@ViewBag.auction.type</span>
+        </div>
+        <div class="auction-condition">
+            <span>Condition:</span>
+            <span>@ViewBag.auction.condition</span>
+        </div>
+    </div>
 </div>
