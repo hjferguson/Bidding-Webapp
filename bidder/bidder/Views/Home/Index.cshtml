@@ -67,6 +67,9 @@
                 <td>@a.endTime</td>
                 <td>@a.condition</td>
                 <td>@a.type</td>
+                <td>
+                    <a asp-controller="FullItem" asp-action="Index" asp-route-auction_id="@a.Id">View @a.itemName</a>
+                </td>
                 <td><img src="@a.image" width="100" height="100"></td>
             </tr>
         }

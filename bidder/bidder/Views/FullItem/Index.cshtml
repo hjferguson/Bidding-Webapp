@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "FullItem";
+}
+<div class="FullItem">
+    @if (ViewBag.auction != null){
+        <p>
+            @ViewBag.auction.Id
+            @ViewBag.auction.currentBid
+            @ViewBag.auction.winningBid
+            @ViewBag.auction.startingBid
+            @ViewBag.auction.itemName
+        </p>
+    }
+</div>
