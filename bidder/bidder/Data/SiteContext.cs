@@ -13,6 +13,8 @@ namespace bidder.Data
         public DbSet<Auction>? Auctions { get; set; }
         public DbSet<User>? Users { get; set; }
 
+        public DbSet<Bid> Bids { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Auction>().HasKey(a => a.Id);

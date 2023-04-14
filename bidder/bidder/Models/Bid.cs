@@ -1,26 +1,26 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace bidder.Models
 {
-	public class Bid
-	{
-		[Key]
-		public int Id;
+    public class Bid
+    {
+        [Key]
+        public int Id { get; set; }
+
         [Required]
-        public Auction auction;
-		[Required]
-		[ForeignKey("auctionID")]
-		public int auctionID;
-		[Required]
-		public User user;
-		public double amount;
+        [ForeignKey("Auction")]
+        public int AuctionID { get; set; }
 
+        [Required]
+        [ForeignKey("User")]
+        public int UserID { get; set; }
 
-		public Bid()
-		{
-		}
-	}
+        [Required]
+        public double Amount { get; set; }
+
+        public Bid()
+        {
+        }
+    }
 }
-
