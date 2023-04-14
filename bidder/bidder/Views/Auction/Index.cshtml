@@ -33,6 +33,10 @@
         <label for="image">Image URL:</label>
         <input asp-for="@Model.image" type="text" id="image">
 
+        <input asp-for="@Model.winningBid" type="text" value="0">
+        <input asp-for="@Model.currentBid" type="hidden" value="0">
+
+
         <input type="submit" value="Register">
     </form>
 </div>

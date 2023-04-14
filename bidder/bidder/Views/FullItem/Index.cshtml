@@ -40,5 +40,13 @@
             <span>Condition:</span>
             <span>@ViewBag.auction.condition</span>
         </div>
+        <div class="bidButton">
+            <label for="bid">Bid:</label>
+            <input type="text" id="bid" name="bid" required>
+            <form asp-action="PlaceBid" method="POST">
+                <input type="hidden" name="bidbtn" id="bidbtn" value="@ViewBag.auction.Id" />
+                <button type="submit">Place Bid</button>
+            </form>
+        </div>
     </div>
 </div>
