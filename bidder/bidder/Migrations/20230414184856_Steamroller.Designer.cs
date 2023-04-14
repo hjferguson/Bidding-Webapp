@@ -12,8 +12,8 @@ using bidder.Data;
 namespace bidder.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20230413054919_updatedTables")]
-    partial class updatedTables
+    [Migration("20230414184856_Steamroller")]
+    partial class Steamroller
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,6 +64,9 @@ namespace bidder.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("winnerId")
+                        .HasColumnType("int");
+
                     b.Property<double>("winningBid")
                         .HasColumnType("float");
 
@@ -77,15 +80,37 @@ namespace bidder.Migrations
                             Id = 1,
                             condition = "New",
                             currentBid = 0.0,
-                            endTime = new DateTime(2023, 4, 13, 1, 49, 19, 82, DateTimeKind.Local).AddTicks(9412),
+                            endTime = new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8834),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 4, 13, 1, 49, 19, 82, DateTimeKind.Local).AddTicks(9381),
+                            startTime = new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8794),
                             startingBid = 15.0,
                             type = "Buffalo",
                             winningBid = 0.0
                         });
+                });
+
+            modelBuilder.Entity("bidder.Models.Bid", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("float");
+
+                    b.Property<int>("AuctionID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Bids");
                 });
 
             modelBuilder.Entity("bidder.Models.User", b =>
