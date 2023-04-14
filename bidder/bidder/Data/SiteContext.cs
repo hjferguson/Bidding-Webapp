@@ -15,6 +15,8 @@ namespace bidder.Data
 
         public DbSet<Bid> Bids { get; set; }
 
+        public DbSet<Review> Review { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Auction>().HasKey(a => a.Id);

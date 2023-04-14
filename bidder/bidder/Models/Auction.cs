@@ -16,6 +16,9 @@ namespace bidder
 		public double startingBid { get; set; }
 		public double currentBid { get; set; }
 		public double winningBid { get; set; }
+
+		[ForeignKey("bidId")]
+		public double bidID { get; set; }
 		public DateTime startTime { get; set; }
 		public DateTime endTime { get; set; }
 		public string condition { get; set; }

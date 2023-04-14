@@ -30,6 +30,9 @@ namespace bidder.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<double>("bidID")
+                        .HasColumnType("float");
+
                     b.Property<string>("condition")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -76,13 +79,14 @@ namespace bidder.Migrations
                         new
                         {
                             Id = 1,
+                            bidID = 0.0,
                             condition = "New",
                             currentBid = 0.0,
-                            endTime = new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8834),
+                            endTime = new DateTime(2023, 4, 14, 18, 17, 53, 745, DateTimeKind.Local).AddTicks(4879),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8794),
+                            startTime = new DateTime(2023, 4, 14, 18, 17, 53, 745, DateTimeKind.Local).AddTicks(4839),
                             startingBid = 15.0,
                             type = "Buffalo",
                             winningBid = 0.0
@@ -109,6 +113,40 @@ namespace bidder.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Bids");
+                });
+
+            modelBuilder.Entity("bidder.Models.Review", b =>
+                {
+                    b.Property<int>("ReviewId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReviewId"), 1L, 1);
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SellerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("reviewer")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("userID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ReviewId");
+
+                    b.HasIndex("userID");
+
+                    b.ToTable("Review");
                 });
 
             modelBuilder.Entity("bidder.Models.User", b =>
@@ -202,6 +240,18 @@ namespace bidder.Migrations
                             username = "admin",
                             verifiedStatus = true
                         });
+                });
+
+            modelBuilder.Entity("bidder.Models.Review", b =>
+                {
+                    b.HasOne("bidder.Models.User", null)
+                        .WithMany("reviews")
+                        .HasForeignKey("userID");
+                });
+
+            modelBuilder.Entity("bidder.Models.User", b =>
+                {
+                    b.Navigation("reviews");
                 });
 #pragma warning restore 612, 618
         }
