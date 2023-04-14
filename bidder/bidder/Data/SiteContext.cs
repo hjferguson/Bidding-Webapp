@@ -15,8 +15,11 @@ namespace bidder.Data
 
         public DbSet<Bid> Bids { get; set; }
 
+
         public DbSet<Cart> Carts { get; set; }
 
+
+        public DbSet<Review> Review { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
