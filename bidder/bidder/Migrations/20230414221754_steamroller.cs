@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace bidder.Migrations
 {
-    public partial class Steamroller : Migration
+    public partial class steamroller : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,6 +20,7 @@ namespace bidder.Migrations
                     startingBid = table.Column<double>(type: "float", nullable: false),
                     currentBid = table.Column<double>(type: "float", nullable: false),
                     winningBid = table.Column<double>(type: "float", nullable: false),
+                    bidID = table.Column<double>(type: "float", nullable: false),
                     startTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     endTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     condition = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -69,10 +70,33 @@ namespace bidder.Migrations
                     table.PrimaryKey("PK_Users", x => x.userID);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Review",
+                columns: table => new
+                {
+                    ReviewId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    reviewer = table.Column<int>(type: "int", nullable: false),
+                    SellerId = table.Column<int>(type: "int", nullable: false),
+                    Rating = table.Column<int>(type: "int", nullable: false),
+                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateCreated = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    userID = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Review", x => x.ReviewId);
+                    table.ForeignKey(
+                        name: "FK_Review_Users_userID",
+                        column: x => x.userID,
+                        principalTable: "Users",
+                        principalColumn: "userID");
+                });
+
             migrationBuilder.InsertData(
                 table: "Auctions",
-                columns: new[] { "Id", "condition", "currentBid", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type", "winnerId", "winningBid" },
-                values: new object[] { 1, "New", 0.0, new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8834), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8794), 15.0, "Buffalo", null, 0.0 });
+                columns: new[] { "Id", "bidID", "condition", "currentBid", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type", "winnerId", "winningBid" },
+                values: new object[] { 1, 0.0, "New", 0.0, new DateTime(2023, 4, 14, 18, 17, 53, 745, DateTimeKind.Local).AddTicks(4879), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 14, 18, 17, 53, 745, DateTimeKind.Local).AddTicks(4839), 15.0, "Buffalo", null, 0.0 });
 
             migrationBuilder.InsertData(
                 table: "Users",
@@ -83,6 +107,11 @@ namespace bidder.Migrations
                     { 2, false, false, "seller@gmail.com", "sel", "ler", "123Password1$", "123Password1$", true, "seller", true },
                     { 3, true, true, "admin@gmail.com", "ad", "min", "123Password1$", "123Password1$", false, "admin", true }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Review_userID",
+                table: "Review",
+                column: "userID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -92,6 +121,9 @@ namespace bidder.Migrations
 
             migrationBuilder.DropTable(
                 name: "Bids");
+
+            migrationBuilder.DropTable(
+                name: "Review");
 
             migrationBuilder.DropTable(
                 name: "Users");
