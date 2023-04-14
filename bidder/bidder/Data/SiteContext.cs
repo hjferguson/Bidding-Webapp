@@ -10,10 +10,14 @@ namespace bidder.Data
         {
         }
 
-        public DbSet<Auction>? Auctions { get; set; }
-        public DbSet<User>? Users { get; set; }
+        public DbSet<Auction> Auctions { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public DbSet<Bid> Bids { get; set; }
+
+
+        public DbSet<Cart> Carts { get; set; }
+
 
         public DbSet<Review> Review { get; set; }
 

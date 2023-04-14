@@ -15,7 +15,7 @@ namespace bidder.Controllers
             context = cont;
         }
 
-        public IActionResult Index(string keyword = "", string category = "", string status = "")
+        public IActionResult Index(string keyword = "", string category = "", string status = "", string filter = "")
         {
             if (Request.Cookies.ContainsKey("user_credentials"))
             {
@@ -78,6 +78,21 @@ namespace bidder.Controllers
             {
                 auctions = auctions.OrderBy(a => a.currentBid);
                 ViewBag.Status = "Current Bid";
+            }
+
+            if (!string.IsNullOrEmpty(filter))
+            {
+                switch (filter)
+                {
+                    case "active":
+                        auctions = auctions.Where(a => DateTime.Now < a.endTime);
+                        break;
+                    case "closed":
+                        auctions = auctions.Where(a => DateTime.Now >= a.endTime);
+                        break;
+                    default:
+                        break;
+                }
             }
 
             return View(auctions.ToList());

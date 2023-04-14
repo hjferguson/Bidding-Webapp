@@ -19,7 +19,11 @@ namespace bidder.Models
 		public string lastName { get; set; }
         public bool verifiedStatus { get; set; }
 		public ICollection<Review> reviews { get; set; }
+        public ICollection<Auction> CreatedAuctions { get; set; }
 
-	}
+
+
+
+    }
 }
 
