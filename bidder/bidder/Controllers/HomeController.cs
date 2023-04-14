@@ -2,27 +2,21 @@
 using bidder.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Linq;
 
 namespace bidder.Controllers
 {
     public class HomeController : Controller
     {
-        /*
-        private readonly ILogger<HomeController> _logger;
+        private SiteContext context;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-        */
         public HomeController(SiteContext cont)
         {
             context = cont;
         }
-        private SiteContext context;
-        public IActionResult Index()
+
+        public IActionResult Index(string keyword = "", string category = "", string status = "")
         {
-            //Reads if a cookie exists, then finds the user and saves it in the viewbag with name user, entire db object saved
             if (Request.Cookies.ContainsKey("user_credentials"))
             {
                 var username = Request.Cookies["user_credentials"];
@@ -30,11 +24,64 @@ namespace bidder.Controllers
                 ViewBag.user = user;
             }
 
-            var auctions = context.Auctions;
-            return View(auctions);
+            var auctions = context.Auctions.AsQueryable();
+
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                auctions = auctions.Where(a => a.itemName.Contains(keyword) || a.itemDescription.Contains(keyword));
+            }
+
+            if (!string.IsNullOrEmpty(category))
+            {
+                switch (category)
+                {
+                    case "new":
+                        auctions = auctions.Where(a => a.condition == "new");
+                        break;
+                    case "used":
+                        auctions = auctions.Where(a => a.condition == "used");
+                        break;
+                    case "older":
+                        auctions = auctions.Where(a => a.endTime < DateTime.Now);
+                        break;
+                    case "newer":
+                        auctions = auctions.Where(a => a.startTime > DateTime.Now);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            if (!string.IsNullOrEmpty(status))
+            {
+                switch (status)
+                {
+                    case "startingBid":
+                        auctions = auctions.OrderBy(a => a.startingBid);
+                        ViewBag.Status = "Starting Bid";
+                        break;
+                    case "currentBid":
+                        auctions = auctions.OrderBy(a => a.currentBid);
+                        ViewBag.Status = "Current Bid";
+                        break;
+                    case "winningBid":
+                        auctions = auctions.OrderByDescending(a => a.currentBid);
+                        ViewBag.Status = "Winning Bid";
+                        break;
+                    default:
+                        auctions = auctions.OrderBy(a => a.currentBid);
+                        ViewBag.Status = "Current Bid";
+                        break;
+                }
+            }
+            else
+            {
+                auctions = auctions.OrderBy(a => a.currentBid);
+                ViewBag.Status = "Current Bid";
+            }
+
+            return View(auctions.ToList());
         }
-
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
