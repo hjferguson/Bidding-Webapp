@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace bidder.Migrations
 {
-    public partial class updatedTables : Migration
+    public partial class Steamroller : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -24,11 +24,27 @@ namespace bidder.Migrations
                     endTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     condition = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     type = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    winnerId = table.Column<int>(type: "int", nullable: true),
                     image = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Auctions", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Bids",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AuctionID = table.Column<int>(type: "int", nullable: false),
+                    UserID = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<double>(type: "float", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Bids", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -55,8 +71,8 @@ namespace bidder.Migrations
 
             migrationBuilder.InsertData(
                 table: "Auctions",
-                columns: new[] { "Id", "condition", "currentBid", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type", "winningBid" },
-                values: new object[] { 1, "New", 0.0, new DateTime(2023, 4, 13, 1, 49, 19, 82, DateTimeKind.Local).AddTicks(9412), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 13, 1, 49, 19, 82, DateTimeKind.Local).AddTicks(9381), 15.0, "Buffalo", 0.0 });
+                columns: new[] { "Id", "condition", "currentBid", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type", "winnerId", "winningBid" },
+                values: new object[] { 1, "New", 0.0, new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8834), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 14, 14, 48, 56, 761, DateTimeKind.Local).AddTicks(8794), 15.0, "Buffalo", null, 0.0 });
 
             migrationBuilder.InsertData(
                 table: "Users",
@@ -73,6 +89,9 @@ namespace bidder.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Auctions");
+
+            migrationBuilder.DropTable(
+                name: "Bids");
 
             migrationBuilder.DropTable(
                 name: "Users");
