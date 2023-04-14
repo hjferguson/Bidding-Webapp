@@ -1,42 +1,58 @@
 @model IEnumerable<Auction>
+@using bidder;
 
 @{
-    ViewBag.Title = "Shopping Cart";
+    ViewData["Title"] = "Cart Page";
 }
 
-<h2>Shopping Cart</h2>
-}
-    
-<table class="table">
-<tr>
-    <th>Item Name</th>
-    <th>Item Description</th>
-    <th>Current Bid</th>
-    <th>End Time</th>
-    <th>Condition</th>
-    <th>Type</th>
-    <th>Image</th>
-    <th>Remove</th>
-</tr>
-<tbody>
-@foreach (Auction a in Model)
+<h1>Your Cart</h1>
+
+@if (Model == null || Model.Count() == 0)
 {
-<tr>
-<td>@a.itemName</td>
-<td>@a.itemDescription</td>
-<td>@a.currentBid</td>
-<td>@a.endTime</td>
-<td>@a.condition</td>
-<td>@a.type</td>
-<td><img src="@a.image" width="100" height="100"></td>
-<td>
-<form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
-<input type="hidden" name="itemId" value="@a.Id" />
-<button type="submit">Remove</button>
-</form>
-</td>
-</tr>
+    <p>Your cart is empty.</p>
 }
-</tbody>
-</table>
-    }
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Item Description</th>
+                <th>Current Bid</th>
+                <th>End Time</th>
+                <th>Condition</th>
+                <th>Type</th>
+                <th>Image</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Auction a in Model)
+            {
+                <tr>
+                    <td>@a.itemName</td>
+                    <td>@a.itemDescription</td>
+                    <td>@a.currentBid</td>
+                    <td>@a.endTime</td>
+                    <td>@a.condition</td>
+                    <td>@a.type</td>
+                    <td><img src="@a.image" width="100" height="100"></td>
+                    <td>
+                        <form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
+                            <input type="hidden" name="Id" value="@a.Id" />
+                            <button type="submit">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="total">
+        <p>Total: @Model.Sum(a => a.currentBid)</p>
+        <form asp-action="Checkout" asp-controller="Cart" method="get">
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+}
+
