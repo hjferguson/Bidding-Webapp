@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bidder",
+    "\\bidder\\bidder",
+    "\\bidder\\bidder\\Controllers",
+    "\\bidder\\bidder\\Data",
+    "\\bidder\\bidder\\Models",
+    "\\bidder\\bidder\\Views",
+    "\\bidder\\bidder\\Views\\Payment",
+    "\\bidder\\bidder\\Views\\Register"
   ],
-  "SelectedNode": "\\bidder.sln",
+  "SelectedNode": "\\bidder\\bidder.sln",
   "PreviewInSolutionExplorer": false
 }
