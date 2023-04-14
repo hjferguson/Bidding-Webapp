@@ -41,10 +41,10 @@
             <span>@ViewBag.auction.condition</span>
         </div>
         <div class="bidButton">
-            <label for="bid">Bid:</label>
-            <input type="text" id="bid" name="bid" required>
-            <form asp-action="PlaceBid" method="POST">
-                <input type="hidden" name="bidbtn" id="bidbtn" value="@ViewBag.auction.Id" />
+            <form asp-action="PlaceBid" asp-controller="Bid" method="POST">
+                <label for="bid">Bid:</label>
+                <input type="number" step="0.01" id="bid" name="amount" required>
+                <input type="hidden" name="auctionId" id="auctionId" value="@ViewBag.auction.Id" />
                 <button type="submit">Place Bid</button>
             </form>
         </div>
