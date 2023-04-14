@@ -19,6 +19,7 @@ namespace bidder.Models
         [Required]
         public double Amount { get; set; }
 
+        public Auction Auction { get; set; }
         public Bid()
         {
         }

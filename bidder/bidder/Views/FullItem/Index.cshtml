@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "FullItem";
 }
+
 <div class="auction-item">
     <div class="auction-image">
         <img src="@ViewBag.auction.image" alt="@ViewBag.auction.itemName">
@@ -40,13 +41,20 @@
             <span>Condition:</span>
             <span>@ViewBag.auction.condition</span>
         </div>
-        <div class="bidButton">
-            <form asp-action="PlaceBid" asp-controller="Bid" method="POST">
-                <label for="bid">Bid:</label>
-                <input type="number" step="0.01" id="bid" name="amount" required>
-                <input type="hidden" name="auctionId" id="auctionId" value="@ViewBag.auction.Id" />
-                <button type="submit">Place Bid</button>
-            </form>
-        </div>
+        @if (DateTime.Now < ViewBag.auction.endTime)
+        {
+            <div class="bidButton">
+                <form asp-action="PlaceBid" asp-controller="Bid" method="POST">
+                    <label for="bid">Bid:</label>
+                    <input type="number" step="0.01" id="bid" name="amount" required>
+                    <input type="hidden" name="auctionId" id="auctionId" value="@ViewBag.auction.Id" />
+                    <button type="submit">Place Bid</button>
+                </form>
+            </div>
+        }
+        else
+        {
+            <p>Auction ended.</p>
+        }
     </div>
 </div>
