@@ -22,19 +22,19 @@
 @foreach (Auction a in Model)
 {
 <tr>
-    <td>@a.itemName</td>
-    <td>@a.itemDescription</td>
-    <td>@a.currentBid</td>
-    <td>@a.endTime</td>
-    <td>@a.condition</td>
-    <td>@a.type</td>
-    <td><img src="@a.image" width="100" height="100"></td>
-    <td>
-    <form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
-    <input type="hidden" name="itemId" value="@a.Id" />
-    <button type="submit">Remove</button>
-    </form>
-    </td>
+<td>@a.itemName</td>
+<td>@a.itemDescription</td>
+<td>@a.currentBid</td>
+<td>@a.endTime</td>
+<td>@a.condition</td>
+<td>@a.type</td>
+<td><img src="@a.image" width="100" height="100"></td>
+<td>
+<form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
+<input type="hidden" name="itemId" value="@a.Id" />
+<button type="submit">Remove</button>
+</form>
+</td>
 </tr>
 }
 </tbody>

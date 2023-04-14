@@ -29,6 +29,7 @@ namespace bidder.Data
                     endTime = DateTime.Now,
                     condition = "New",
                     type = "Buffalo",
+                    winnerId  = null,
                     image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                     currentBid = 0,
                     winningBid = 0
