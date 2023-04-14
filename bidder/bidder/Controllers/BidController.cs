@@ -18,18 +18,20 @@ namespace bidder.Controllers
         [HttpPost]
         public IActionResult PlaceBid(int auctionId, double amount)
         {
-            if (!Request.Cookies.ContainsKey("user_credentials"))
+            //trying to follow other controllers where a viewbag is made from the cookie...
+            
+            if (Request.Cookies.ContainsKey("user_credentials"))
             {
-                // Redirect to login page or display an error message
-                return RedirectToAction("Login", "Account");
+                var username = Request.Cookies["user_credentials"];
+                var myuser = _context.Users?.ToArray().FirstOrDefault(x => x.username.Equals(username, StringComparison.Ordinal));
+                ViewBag.user = myuser;
             }
 
-            var username = Request.Cookies["user_credentials"];
-            var user = _context.Users.FirstOrDefault(u => u.username.Equals(username, StringComparison.Ordinal));
+            var user = ViewBag.user as User;
 
             if (user == null)
             {
-                // User not found, handle this case as needed
+                // Redirect to login page or display an error message
                 return RedirectToAction("Login", "Account");
             }
 
