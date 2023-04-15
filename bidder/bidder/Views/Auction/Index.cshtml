@@ -33,10 +33,20 @@
         <label for="image">Image URL:</label>
         <input asp-for="@Model.image" type="text" id="image">
 
-        <input asp-for="@Model.winningBid" type="text" value="0">
+        
         <input asp-for="@Model.currentBid" type="hidden" value="0">
 
+        <input asp-for="@Model.CreatorId" type="hidden" value="2">
 
-        <input type="submit" value="Register">
+        <input type="hidden" name="creatorId" value="@ViewContext.HttpContext.Request.Cookies["user_credentials"]">
+        
+
+
+        <button type="submit" name="submit" class="btn btn-primary">Register</button>
+
+
+
+
+
     </form>
 </div>

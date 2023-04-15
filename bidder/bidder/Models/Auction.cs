@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Auction.cs
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using bidder.Models;
@@ -28,9 +30,11 @@ namespace bidder
 
         [ForeignKey("winnerId")]
         public int? winnerId { get; set; }
-        public User Winner { get; set; }
+        //public User Winner { get; set; }
 
         public string image { get; set; }
+
+        public ICollection<Bid> Bids { get; set; } // Add this line
 
         public int getID()
         {

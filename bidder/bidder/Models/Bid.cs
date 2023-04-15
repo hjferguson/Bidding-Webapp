@@ -19,7 +19,10 @@ namespace bidder.Models
         [Required]
         public double Amount { get; set; }
 
+        // Navigation properties
         public Auction Auction { get; set; }
+        public User User { get; set; }
+
         public Bid()
         {
         }
