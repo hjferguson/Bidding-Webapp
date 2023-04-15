@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace bidder.Migrations
 {
-    public partial class ifeeldeadinside : Migration
+    public partial class downtothewire : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -148,12 +148,12 @@ namespace bidder.Migrations
             migrationBuilder.InsertData(
                 table: "Auctions",
                 columns: new[] { "Id", "CreatorId", "condition", "currentBid", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type", "winnerId", "winningBid" },
-                values: new object[] { 1, 2, "New", 0.0, new DateTime(2023, 4, 14, 22, 16, 31, 587, DateTimeKind.Local).AddTicks(6941), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 14, 22, 16, 31, 587, DateTimeKind.Local).AddTicks(6903), 15.0, "Buffalo", null, 15.0 });
+                values: new object[] { 1, 2, "New", 0.0, new DateTime(2023, 4, 14, 22, 38, 37, 100, DateTimeKind.Local).AddTicks(7000), "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg", "Buffalo", "Buffalo", new DateTime(2023, 4, 14, 22, 38, 37, 100, DateTimeKind.Local).AddTicks(6967), 15.0, "Buffalo", null, 15.0 });
 
             migrationBuilder.InsertData(
                 table: "Auctions",
                 columns: new[] { "Id", "CreatorId", "condition", "currentBid", "endTime", "image", "itemDescription", "itemName", "startTime", "startingBid", "type", "winnerId", "winningBid" },
-                values: new object[] { 2, 2, "New", 15.0, new DateTime(2023, 4, 14, 22, 21, 31, 587, DateTimeKind.Local).AddTicks(6948), "https://static.displate.com/857x1200/displate/2020-11-13/82125307287b2e5a94c8cfb31e6ecc79_27a3dc812489a692d79f3ef7d63be919.jpg", "Signed by us", "Mark Ruffalo Signed Poster", new DateTime(2023, 4, 14, 22, 16, 31, 587, DateTimeKind.Local).AddTicks(6946), 15.0, "Collectibe", null, 0.0 });
+                values: new object[] { 2, 2, "New", 15.0, new DateTime(2023, 4, 21, 21, 18, 37, 100, DateTimeKind.Local).AddTicks(7007), "https://static.displate.com/857x1200/displate/2020-11-13/82125307287b2e5a94c8cfb31e6ecc79_27a3dc812489a692d79f3ef7d63be919.jpg", "Signed by us", "Mark Ruffalo Signed Poster", new DateTime(2023, 4, 14, 22, 38, 37, 100, DateTimeKind.Local).AddTicks(7006), 15.0, "Collectibe", null, 0.0 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Auctions_CreatorId",

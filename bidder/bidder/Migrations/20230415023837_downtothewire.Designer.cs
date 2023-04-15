@@ -12,8 +12,8 @@ using bidder.Data;
 namespace bidder.Migrations
 {
     [DbContext(typeof(SiteContext))]
-    [Migration("20230415021632_ifeeldeadinside")]
-    partial class ifeeldeadinside
+    [Migration("20230415023837_downtothewire")]
+    partial class downtothewire
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -86,11 +86,11 @@ namespace bidder.Migrations
                             CreatorId = 2,
                             condition = "New",
                             currentBid = 0.0,
-                            endTime = new DateTime(2023, 4, 14, 22, 16, 31, 587, DateTimeKind.Local).AddTicks(6941),
+                            endTime = new DateTime(2023, 4, 14, 22, 38, 37, 100, DateTimeKind.Local).AddTicks(7000),
                             image = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1200px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg",
                             itemDescription = "Buffalo",
                             itemName = "Buffalo",
-                            startTime = new DateTime(2023, 4, 14, 22, 16, 31, 587, DateTimeKind.Local).AddTicks(6903),
+                            startTime = new DateTime(2023, 4, 14, 22, 38, 37, 100, DateTimeKind.Local).AddTicks(6967),
                             startingBid = 15.0,
                             type = "Buffalo",
                             winningBid = 15.0
@@ -101,11 +101,11 @@ namespace bidder.Migrations
                             CreatorId = 2,
                             condition = "New",
                             currentBid = 15.0,
-                            endTime = new DateTime(2023, 4, 14, 22, 21, 31, 587, DateTimeKind.Local).AddTicks(6948),
+                            endTime = new DateTime(2023, 4, 21, 21, 18, 37, 100, DateTimeKind.Local).AddTicks(7007),
                             image = "https://static.displate.com/857x1200/displate/2020-11-13/82125307287b2e5a94c8cfb31e6ecc79_27a3dc812489a692d79f3ef7d63be919.jpg",
                             itemDescription = "Signed by us",
                             itemName = "Mark Ruffalo Signed Poster",
-                            startTime = new DateTime(2023, 4, 14, 22, 16, 31, 587, DateTimeKind.Local).AddTicks(6946),
+                            startTime = new DateTime(2023, 4, 14, 22, 38, 37, 100, DateTimeKind.Local).AddTicks(7006),
                             startingBid = 15.0,
                             type = "Collectibe",
                             winningBid = 0.0

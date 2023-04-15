@@ -67,7 +67,7 @@ namespace bidder.Data
                     itemDescription = "Signed by us",
                     startingBid = 15,
                     startTime = DateTime.Now,
-                    endTime = DateTime.Now.AddMinutes(5),
+                    endTime = DateTime.Now.AddMinutes(10000),
                     condition = "New",
                     type = "Collectibe",
                     winnerId = null,
