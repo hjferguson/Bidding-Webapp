@@ -7,7 +7,7 @@ namespace bidder.Models
     {
         private readonly SmtpClient _smtpClient;
 
-        public EmailService(string smtpServer, int smtpPort, string smtpUsername, string smtpPassword) //"smtp.gmail.com",587,"harlan.j.ferguson@gmail.com","Pomle@$$hf8NTzzKDnJtLj"
+        public EmailService(string smtpServer, int smtpPort, string smtpUsername, string smtpPassword) //"smtp.gmail.com",587,"<your-email-here>","your-app-password-here"
         {
             _smtpClient = new SmtpClient(smtpServer, smtpPort);
             _smtpClient.Credentials = new NetworkCredential(smtpUsername, smtpPassword);
